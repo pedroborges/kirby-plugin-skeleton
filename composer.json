@@ -2,10 +2,12 @@
     "name": ":org_username/:package_name",
     "description": ":package_description",
     "keywords": [
-        ":package_name"
+        ":package_name",
+        "kirby-plugin"
     ],
     "homepage": "https://github.com/:org_username/:package_name",
     "license": "MIT",
+    "type": "kirby-plugin",
     "authors": [
         {
             "name": ":author_name",
@@ -15,8 +17,7 @@
         }
     ],
     "require": {
-        "php": "^7.1|^7.2",
-        "Illuminate/Support": "^5.6"
+        "php": "^7.1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.12",
@@ -24,6 +25,10 @@
         "phpunit/phpunit": "^7.0"
     },
     "autoload": {
+        "files": [
+            "config.php",
+            "src/helpers.php"
+        ],
         "psr-4": {
             ":package_space\\Skeleton\\": "src"
         }
@@ -40,15 +45,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                ":package_space\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": ":package_space\\Skeleton\\SkeletonFacade"
-            }
-        }
     }
 }

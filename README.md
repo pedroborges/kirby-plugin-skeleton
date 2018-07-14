@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/:org_username/:package_name.svg?style=flat-square)](https://scrutinizer-ci.com/g/:org_username/:package_name)
 [![Total Downloads](https://img.shields.io/packagist/dt/:org_username/:package_name.svg?style=flat-square)](https://packagist.org/packages/:org_username/:package_name)
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:package_description``` ```:package_space``` ```:author_homepage``` ```:org_username``` ```:org_name``` ```:org_email``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
+**Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:package_description``` ```:package_space``` ```:plugin_name``` ```:author_homepage``` ```:org_username``` ```:org_name``` ```:org_email``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -20,7 +20,7 @@ composer require :org_username/:package_name
 ## Usage
 
 ``` php
-$skeleton = new :package_space\Skeleton();
+$skeleton = new :package_space\Skeleton\Skeleton();
 echo $skeleton->echoPhrase('Hello!');
 ```
 

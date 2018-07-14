@@ -2,7 +2,7 @@
 
 namespace :package_space\Skeleton;
 
-class SkeletonClass
+class Skeleton
 {
     /**
      * Create a new Skeleton Instance.
